@@ -1,12 +1,10 @@
 ---
 title: "Crime Prediction Using Multiple-ANFIS Architecture and Spatiotemporal Data"
 collection: publications
-permalink: /publication/2019-05-09-crime-prediction-using-multiple-anfis-architecture-and-spatiotemporal-data
+permalink: /publication/2021-peace-agreement-strength
 date: 2019-05-09
 venue: '2018 International Conference on Intelligent Systems (IS)'
 paperurl: '/files/publications/Crime Prediction Using Multiple-ANFIS Architecture and Spatiotemporal Data.pdf'
 link: 'https://doi.org/10.1109/IS.2018.8710564'
-code: 'https://doi.org/10.7910/DVN/VUY8UI'
-github: 'https://github.com/jayrobwilliams/Peace-Agreement-Strength'
 citation: 'Mashnoon Islam, Redwanul Karim, Kalyan Roy, Saif Mahmood, Sadat Hossain, Rashedur M Rahman. (2018). &quot;Crime Prediction Using Multiple-ANFIS Architecture and Spatiotemporal Data.&quot; <i>2018 International Conference on Intelligent Systems (IS)</i> 58-65. doi: 10.1109/IS.2018.8710564''
 ---
