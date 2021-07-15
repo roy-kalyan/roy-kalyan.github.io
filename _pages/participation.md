@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Achievements and Participation"
-permalink: /achievements-participation/
+permalink: /participation/
 author_profile: true
 ---
 
