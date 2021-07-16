@@ -8,7 +8,7 @@ header:
   og_image: "research/sample-graph.png"
 ---
 
-Graphs (a.k.a., networks) are ubiquitously used to model mutual interactions among realworld objects. For example, social networks represent friendship, acquaintanceship, workmate,
+Graphs (a.k.a., networks) are ubiquitously used to model mutual interactions among real world objects. For example, social networks represent friendship, acquaintanceship, workmate,
 or other forms of online/offline social relations between persons; web graphs represent links
 among web-pages; protein-protein interaction (PPI) networks show mutual interactions
 between proteins; connections in functional linkage networks indicate which pairs of
@@ -31,15 +31,10 @@ Discovering quasi-cliques has been proved to be an NP-complete problem. So it is
 highly unlikely that there exists any polynomial-time algorithm to solve this problem. This
 issue is compounded by the fact that many real-world networks are very large, containing
 hundreds of thousands to billions of nodes and/or edges. Using exact algorithms
-for dense subgraph mining on such large graphs would be prohibitively slow and/or memory-crashing. Hence most research on this problem focused on developing heuristic or
+for dense subgraph mining on such large graphs would be prohibitively slow and/or memory-crashing. Hence, most research on this problem focused on developing heuristic or
 approximation algorithms. But heuristic/approximation algorithms do not guarantee
 to discover all the dense subgraphs in a graph and thereby may fail to achieve its goal perfectly (correctly identifying all the communities present in a society, all the protein complexes and/or gene-functions in a living cell, etc.). Therefore, we need exact algorithms for these purposes.
 
-To the best of our knowledge, very few exact algorithms were proposed in the literature
-that can correctly enumerate all quasi-cliques in a graph. All of them suffer from high running
-time, high memory requirement, or both. The main reason for their inefficiency is: unlike some
-other popular pattern mining problem, such as mining frequent itemsets or cliques, quasi-clique
-doesn’t satisfy the famous anti-monotone property, i.e., not every subset of a quasi-clique
-is a quasi-clique. As a result, it is difficult to devise effective techniques to prune the search space.
+To the best of our knowledge, very few exact algorithms can correctly enumerate all quasi-cliques in a graph. All of them suffer from high running time, high memory requirement, or both. The main reason for their inefficiency is: unlike some other popular pattern mining problem, such as mining frequent itemsets or cliques, quasi-clique doesn’t satisfy the famous anti-monotone property, i.e., not every subset of a quasi-clique is a quasi-clique. As a result, it is difficult to devise effective techniques to prune the search space.
 
 We are developing an exact algorithm, called QCE (stands for Quasi-Clique Enumerator) for dense subgraph enumeration to solve this problem. QCE is a reverse search algorithm along with effective pruning techniques employed from graph theory. Because of these pruning techniques, our algorithm runs significantly faster than our competitors as well as takes less or comparable amount of memory.
