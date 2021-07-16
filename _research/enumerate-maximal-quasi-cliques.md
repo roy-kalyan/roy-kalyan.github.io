@@ -42,5 +42,4 @@ other popular pattern mining problem, such as mining frequent itemsets or clique
 doesn’t satisfy the famous anti-monotone property, i.e., not every subset of a quasi-clique
 is a quasi-clique. As a result, it is difficult to devise effective techniques to prune the search space.
 
-We want to solve this problem by developing an exact algorithm, called QCE (stands for Quasi-Clique Enumerator) for dense subgraph enumeration. QCE will be a reverse search algorithm along with effective pruning techniques employed from graph theory. We anticipate that
-because of these pruning techniques, our algorithm will run significantly faster than our competitors as well as will take less or comparable amount of memory.
+We are developing an exact algorithm, called QCE (stands for Quasi-Clique Enumerator) for dense subgraph enumeration to solve this problem. QCE is a reverse search algorithm along with effective pruning techniques employed from graph theory. Because of these pruning techniques, our algorithm runs significantly faster than our competitors as well as takes less or comparable amount of memory.
