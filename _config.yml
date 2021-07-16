@@ -11,9 +11,9 @@ title                    : "Kalyan Roy"
 title_separator          : "-"
 name                     : &name "Kalyan Roy"
 description              : &description "personal description"
-url                      : https://kalyanroy1995.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://roy-kalyan.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "kalyanroy1995/kalyanroy1995.github.io"
+repository               : "roy-kalyan/roy-kalyan.github.io"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -90,7 +90,7 @@ author:
   pubmed           :
   orcid            : 
   googlescholar    : "https://scholar.google.com/citations?user=0_sdwMEAAAAJ&hl=en"
-  email            : "kalyan.roy@northsouth.edu"
+  email            : "kalyanroy.sat007@gmail.com"
   researchgate     : "https://www.researchgate.net/profile/Kalyan-Roy"
   uri              :
   bitbucket        :
@@ -99,7 +99,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "kalyanroy1995"
+  github           : "roy-kalyan"
   gitlab           :
   google_plus      :
   keybase          :
