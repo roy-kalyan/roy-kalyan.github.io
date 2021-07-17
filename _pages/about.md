@@ -10,7 +10,7 @@ redirect_from:
 
 Welcome! I am a Research Assistant at the [North South University](http://www.northsouth.edu/) in Bangladesh, where I work on Graph Algorithms under the supervision of [Dr. Ahsanur Rahman](http://ece.northsouth.edu/people/dr-ahsanur-rahman/). My research interest lies in Theoretical computer science, specifically in Graph Theory.
 
-I earned my BSc. in Computer Science and Engineering from the [North South University](http://www.northsouth.edu/), Bangladesh.
+I earned my BS degree in Computer Science and Engineering from the [North South University](http://www.northsouth.edu/), Bangladesh.
 
 <!---
 
