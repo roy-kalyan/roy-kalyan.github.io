@@ -8,4 +8,6 @@ header:
   og_image: "research/ternary.png"
 ---
 
-In this project I leverage computer vision tools and machine learning techniques to identify clusters of video authors based on the imagery contained within the videos themselves. This approach offers the possibility of being able to map relationships between clandestine actors that intentionally try to obscure these connections.
+A vertex cover of an undirected graph G = (V, E) is a subset $V' \subseteq V$ such that if (u, v) is an edge of G, then either $u \in V$ or $v \in V$.
+
+
