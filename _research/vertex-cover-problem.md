@@ -1,5 +1,5 @@
 ---
-title: "Vertex-cover Problem"
+title: "Vertex-cover  Problem"
 layout: single-portfolio
 excerpt: "<img src='/images/research/vertex-cover.png' alt=''>"
 collection: research
