@@ -1,5 +1,5 @@
 ---
-title: "Enumerate Maximal Quasi-cliques in a Graph"
+title: "Enumerate Maximal Quasi-cliques"
 layout: single-portfolio
 excerpt: "<img src='/images/research/sample-graph.png' alt=''>"
 collection: research
