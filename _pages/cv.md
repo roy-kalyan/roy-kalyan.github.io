@@ -9,7 +9,7 @@ redirect_from:
 
 <iframe src="/files/cv/cv_kalyan.pdf" width="100%" height="500" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>
 
-You can download a PDF copy of my CV [here](/files/cv/cv_kalyan.pdf) (Last Updated On: July 16 2021).
+You can download a PDF copy of my CV [here](/files/cv/cv_kalyan.pdf) (Last Updated On: August 14 2021).
 
 <!---
 
