@@ -4,6 +4,6 @@ title: "Contact"
 permalink: /contact/
 author_profile: true
 ---
-**Email:** kalyanroy [dot] sat007 [at] gmail [dot] com; kalyan [dot] roy [at] northsouth [dot] edu
+**Email:** kalyanroy [DOT] sat007 [AT] gmail [DOT] com; kalyan [DOT] roy [AT] northsouth [DOT] edu
 
 **Website:** [https://roy-kalyan.github.io/](https://roy-kalyan.github.io/)
