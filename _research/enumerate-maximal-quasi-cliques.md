@@ -24,7 +24,7 @@ subgraph mining is also useful for discovering link-spams from web-graphs, graph
 compression, indexing in graph databases, story-telling in micro-blogs, regulatory motif
 identification, visualization of large graphs, and so on.
 
-Due to its importance, a lot of research have been conducted on dense subgraph mining.
+Due to its importance, a lot of research has been conducted on dense subgraph mining.
 Different research use different mathematical formulations to define the concept of densesubgraphs. We are interested in a particular formulation, known as a quasi-clique (a.k.a., a pseudo-clique or simply, a dense-subgraph): a group of nodes which are densely interconnected with each other and thereby forms a subgraph that looks almost like a clique (a subgraph among which all possible connections/edges are present).
 
 Discovering quasi-cliques has been proved to be an NP-complete problem. So it is
