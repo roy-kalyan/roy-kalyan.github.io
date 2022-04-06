@@ -1,6 +1,6 @@
 # main links links
 main:
-  - title: "Experience"
+  - title: "Work Experience"
     url: /experience/
   
   - title: "Publications"
@@ -12,11 +12,11 @@ main:
 #  - title: "Teaching"
 #    url: /teaching/
 
-  - title: "Achievements and Participation"
-    url: /participation/
+  - title: "Special Accomplishments"
+    url: /accomplishments/
     
-  - title: "CV"
+  - title: "Curriculum vitae"
     url: /cv/
     
-  - title: "Contact"
-    url: /contact/
+#  - title: "Contact"
+#    url: /contact/
