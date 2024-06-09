@@ -84,13 +84,13 @@ analytics:
 author:
   name             : "Kalyan Roy"
   avatar           : "kalyan.jpg"
-  bio              : "Research Assistant"
-  location         : "Satkhira, Bangladesh"
+  bio              : 
+  location         :
   employer         :
   pubmed           :
-  orcid            : 
-  googlescholar    : "https://scholar.google.com/citations?user=0_sdwMEAAAAJ&hl=en"
-  email            : "kalyanroy.sat007@gmail.com"
+  orcid            : "https://orcid.org/0009-0000-4915-2169"
+  googlescholar    : "https://scholar.google.com/citations?user=BFG5dRAAAAAJ&hl=en"
+  email            : "kalyan.r1226@gmail.com"
   researchgate     : "https://www.researchgate.net/profile/Kalyan-Roy"
   uri              :
   bitbucket        :

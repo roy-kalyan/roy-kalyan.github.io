@@ -8,9 +8,13 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I am a Research Assistant at [North South University](http://www.northsouth.edu/), Bangladesh, where I work on Graph Algorithms under the supervision of [Dr. Ahsanur Rahman](http://ece.northsouth.edu/people/dr-ahsanur-rahman/). My current research interests are primarily in Algorithms and Computer Security.
+I am pleased to welcome you to my online portfolio. I have obtained a Bachelor of Science degree in Computer Science and Engineering from [North South University](http://www.northsouth.edu/) in Bangladesh.
 
-I earned my BS degree in Computer Science and Engineering from [North South University](http://www.northsouth.edu/), Bangladesh.
+During the final year of my undergraduate program, I had the privilege of serving as a Teaching Assistant. In this capacity, I provided support and guidance to students enrolled in courses focused on C programming, Data Structures, and Algorithms.
+
+Additionally, I worked as a Research Assistant at [North South University](http://www.northsouth.edu/), Bangladesh, where I conducted research on Graph Algorithms under the guidance of [Dr. Ahsanur Rahman](http://ece.northsouth.edu/people/dr-ahsanur-rahman/).
+
+My primary research interests lie in the areas of Algorithms, Graph Theory, and Cryptography. I am constantly motivated to learn more and delve deeper into these fascinating fields.
 
 <!---
 
