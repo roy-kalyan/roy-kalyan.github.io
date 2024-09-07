@@ -7,7 +7,7 @@ redirect_from:
   - /resume
 ---
 
-<iframe src="/files/cv/cv_kalyan.pdf" width="100%" height="500" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>
+<iframe src="/files/resume/resume-kalyan.pdf" width="100%" height="500" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>
 
 My Curriculum Vitae (CV) is available as an accessible PDF document. [Download it here](/files/resume/resume-kalyan.pdf) (Last updated: September 7, 2024).
 
