@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-**You can also find my articles on my [ORCiD](https://orcid.org/0009-0000-4915-2169) profile.**
+**You can also find my articles on my ORCID profile: [0009-0000-4915-2169](https://orcid.org/0009-0000-4915-2169).**
 
 {% if author.googlescholar %}
   You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
