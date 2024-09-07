@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Curriculum Vitae"
-permalink: /resume/
+permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
@@ -9,7 +9,7 @@ redirect_from:
 
 <iframe src="/files/cv/cv_kalyan.pdf" width="100%" height="500" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>
 
-My resume is available as an accessible PDF document. [Download it here](/files/resume/resume-kalyan.pdf) (Last updated: September 7, 2024).
+My Curriculum Vitae (CV) is available as an accessible PDF document. [Download it here](/files/resume/resume-kalyan.pdf) (Last updated: September 7, 2024).
 
 <!---
 
