@@ -91,7 +91,7 @@ author:
   orcid            : "https://orcid.org/0009-0000-4915-2169"
   googlescholar    : "https://scholar.google.com/citations?user=BFG5dRAAAAAJ&hl=en"
   email            : "kalyan.r1226@gmail.com"
-  researchgate     : "https://www.researchgate.net/profile/Kalyan-Roy"
+  researchgate     : 
   uri              :
   bitbucket        :
   codepen          :
@@ -106,7 +106,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "roy-kalyan"
+  linkedin         : 
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
