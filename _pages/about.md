@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am pleased to welcome you to my online portfolio. I have obtained a Bachelor of Science degree in Computer Science and Engineering from [North South University](http://www.northsouth.edu/) in Bangladesh.
+I am pleased to welcome you to my online portfolio. I have obtained a Bachelor of Science degree in Computer Science and Engineering from [North South University](http://www.northsouth.edu/), Bangladesh.
 
 During the final year of my undergraduate program, I had the privilege of serving as a Teaching Assistant. In this capacity, I provided support and guidance to students enrolled in courses focused on C programming, Data Structures, and Algorithms.
 
