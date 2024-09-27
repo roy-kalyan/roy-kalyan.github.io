@@ -14,7 +14,7 @@ During the final year of my undergraduate program, I had the privilege of servin
 
 Additionally, I worked as a Research Assistant at [North South University](http://www.northsouth.edu/), Bangladesh, where I conducted research on Graph Algorithms under the guidance of [Dr. Ahsanur Rahman](http://ece.northsouth.edu/people/dr-ahsanur-rahman/).
 
-My primary research interests lie in the areas of Algorithms, Graph Theory, and Cryptography. I am constantly motivated to learn more and delve deeper into these fascinating fields.
+My primary research interests lie in the areas of Algorithms, Graph Theory, Cryptography, and Machine learning. I am constantly motivated to learn more and delve deeper into these fascinating fields.
 
 <!---
 
