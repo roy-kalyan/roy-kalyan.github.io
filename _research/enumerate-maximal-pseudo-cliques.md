@@ -1,7 +1,8 @@
 ---
 title: "Enumerate Maximal Pseudo-cliques"
 layout: single-portfolio
-excerpt: "<img src='/images/research/sample-graph.png' alt=''>"
+thumbnail: /images/research/sample-graph.png
+excerpt: "Dense groups of nodes in a network often correspond to real structure: communities in social graphs, complexes in protein networks, and so on. Finding all of them exactly is computationally hard, so most methods settle for approximations that can miss results. This project presents FPCE, an exact pseudo-clique enumerator that returns the complete set while running substantially faster than existing exact algorithms."
 collection: research
 order_number: 40
 header: 

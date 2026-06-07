@@ -16,6 +16,12 @@ layout: compress
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
+    <!-- Custom Banner Image -->
+    <div class="custom-banner">
+      <div class="custom-banner-overlay"></div>
+      <img src="{{ site.author.banner | default: '/images/academic_portfolio_banner.png' | relative_url }}" class="custom-banner-img" alt="Banner Image">
+    </div>
+
     {{ content }}
 
     <div class="page__footer">

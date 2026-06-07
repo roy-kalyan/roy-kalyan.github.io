@@ -1,40 +1,1010 @@
 /* ==========================================================================
-   CUSTOM CSS BY ME
+   ACADEMIC PORTFOLIO OVERHAUL (ROBERTA VALTORTA STYLE MATCH)
    ========================================================================== */
 
-/*
-   Visibility
-   ========================================================================== */
+/* Google Fonts loading check: Open Sans */
+body {
+  font-family: "Open Sans", -apple-system, sans-serif !important;
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+  color: #212121 !important;
+  background-color: #ffffff !important;
+}
 
-.zoom{
-  /* default button */
+/* Main layout containers */
+#main {
+  max-width: 1200px !important;
+  margin: 0 auto;
+  padding: 2.5em 1.5em;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff !important;
+  position: relative !important;
+  z-index: 10 !important; /* Lift main layout above banner overlays */
   
-  &:hover {
-    transform: scale(1.25);
+  @media (min-width: 925px) {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
-.container {
-  position: relative;
+/* Custom banner styles */
+.custom-banner {
+  position: relative !important;
+  z-index: 1 !important; /* Keep banner below main content elements */
   width: 100%;
-  max-width: 400px;
+  height: 220px;
+  overflow: hidden;
+  background-color: #eaeaea;
+  
+  .custom-banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.05);
+    z-index: 1;
+  }
+  
+  .custom-banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
 }
 
-/* overlay effect (full height and width) - lays on top of the container */
-.overlay {
-  position: absolute;
+/* Masthead / Header Styling */
+.masthead {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
   top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .3s ease;
-  background-color: $dark-gray;
+  z-index: 999;
+  
+  &__inner-wrap {
+    padding: 0.75em 4% !important; /* Stretch header to edges with 4% side padding */
+    max-width: 100% !important;
+    margin: 0 auto;
+  }
+}
+.masthead__menu {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
 }
 
-/* When you mouse over the container, fade in the overlay */
-.container:hover .overlay {
-  opacity: 0.25;
+.site-title {
+  font-weight: 700 !important;
+  font-size: 19px !important;
+  margin-right: 2rem !important;
+  white-space: nowrap !important;
+  
+  a {
+    color: #212121 !important;
+    text-decoration: none !important;
+    
+    &:hover {
+      color: #212121 !important;
+      text-decoration: none !important;
+    }
+  }
+}
+
+.greedy-nav {
+  background: transparent !important;
+  flex: 1 !important;
+  min-width: 0 !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
+  
+  a {
+    color: #212121 !important;
+    font-weight: 500;
+    font-size: 16px;
+    
+    &:hover {
+      color: #b12b32 !important;
+    }
+  }
+  
+  .visible-links {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    
+    li {
+      a {
+        margin: 0 0.8rem !important;
+        white-space: nowrap !important;
+      }
+
+      &.active a {
+        font-weight: 700 !important;
+      }
+    }
+    
+    a:before {
+      display: none !important;
+    }
+  }
+}
+
+/* Sidebar Styling - Flat and transparent with no border/background */
+.sidebar {
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  margin-bottom: 2em;
+  
+  @media (min-width: 925px) {
+    width: 25% !important;
+    float: left;
+    margin-right: 6% !important;
+    position: sticky;
+    top: 80px;
+    z-index: 10;
+    margin-top: -100px !important; /* Overlap the banner */
+  }
+}
+
+/* Sidebar avatar - Square photo overlapping the banner with z-index fix */
+.author__avatar {
+  text-align: left !important;
+  margin-bottom: 1.25rem;
+  display: block;
+  position: relative !important;
+  z-index: 99 !important; /* Lift avatar above the cover photo and overlays */
+  
+  img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 0% !important; /* Square */
+    border: 4px solid #ffffff !important; /* Solid white border */
+    padding: 0 !important; /* Border sits flush with no padding! */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    display: block;
+    margin: 0;
+    position: relative !important;
+    z-index: 99 !important;
+  }
+}
+
+.author__content {
+  text-align: left !important;
+  margin-bottom: 1.5rem;
+  border-bottom: none !important;
+  padding-bottom: 0;
+  
+  .author__name {
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    color: #212121 !important;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    line-height: 1.2;
+    font-family: "Open Sans", sans-serif !important;
+  }
+  
+  .author__bio {
+    font-size: 0.9em !important;
+    color: #212121 !important;
+    margin: 0 0 15px 0 !important;
+    font-family: "Open Sans", sans-serif !important;
+  }
+  
+  .author__email {
+    font-size: 16px !important;
+    margin: 8px 0 !important;
+    font-family: "Open Sans", sans-serif !important;
+    
+    a {
+      color: #b12b32 !important;
+      text-decoration: underline !important;
+      display: inline-block !important;
+      font-weight: 400 !important;
+      font-family: "Open Sans", sans-serif !important;
+      
+      &:hover {
+        color: #8c2025 !important;
+      }
+    }
+  }
+}
+
+/* Social links and metadata in sidebar - Red and Underlined */
+.author__urls-wrapper {
+  ul.author__urls {
+    display: block !important;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    li {
+      margin-bottom: 0.2rem !important;
+      font-size: 16px !important;
+      color: #212121;
+      display: flex;
+      align-items: center;
+      font-family: "Open Sans", sans-serif !important;
+      
+      /* Hide standard location/employer pin icon for clean text layout */
+      i.fa-map-marker-alt, i.fa-map-marker {
+        display: none !important;
+      }
+      
+      i, svg {
+        margin-right: 0.4rem !important;
+        width: 1em !important;
+        height: 1em !important;
+        color: #718096 !important; /* Grey icons */
+        text-align: center;
+        display: inline-block;
+      }
+      
+      a {
+        color: #b12b32 !important; /* Red links */
+        text-decoration: underline !important; /* Underlined links */
+        display: inline-block !important; /* Inline block so underlines fit text! */
+        font-family: "Open Sans", sans-serif !important;
+        transition: color 0.2s ease-in-out;
+        
+        &:hover {
+          color: #8c2025 !important;
+        }
+      }
+    }
+  }
+  
+  button {
+    display: none !important;
+  }
+}
+
+/* Content Area styling */
+.page {
+  @media (min-width: 925px) {
+    width: 69% !important;
+    float: right;
+    padding-left: 1rem;
+  }
+  
+  .page__inner-wrap {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 0;
+  }
+}
+
+/* Typography styles for content page */
+.page__title {
+  font-size: 2.5rem !important;
+  font-weight: 600 !important;
+  color: #212121 !important;
+  margin-bottom: 0.5rem;
+  border-bottom: none !important;
+}
+
+.page__lead {
+  font-size: 1.125rem !important;
+  line-height: 1.5 !important;
+  color: #212121 !important;
+  font-weight: 400 !important;
+  margin-bottom: 1.5rem;
+}
+
+.page__content {
+  color: #212121 !important;
+  line-height: 1.6 !important;
+  font-size: 16px !important;
+  
+  p, li, dl {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    color: #212121 !important;
+  }
+  
+  h2 {
+    font-size: 1.6rem !important;
+    font-weight: 700 !important;
+    color: #212121 !important;
+    border-bottom: none !important; /* No bottom border line */
+    padding-bottom: 0;
+    margin-top: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    color: #212121 !important;
+    margin-top: 1.5rem;
+  }
+  
+  a {
+    color: #b12b32 !important;
+    text-decoration: underline !important;
+    font-weight: 500;
+    
+    &:hover {
+      text-decoration: underline !important;
+      color: #8c2025 !important;
+    }
+  }
+}
+
+/* Callout block (Award section) styling */
+.theme-callout-block {
+  background-color: #f5f5f5 !important;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  display: flex;
+  
+  .theme-callout-block__emoji {
+    font-size: 1.25rem;
+    margin-right: 0.75rem;
+  }
+}
+
+/* Publication/archive item list styling (Premium Card style) */
+.list__item {
+  border-bottom: 1px solid #edf2f7;
+  padding: 1.5rem 0;
+  transition: transform 0.2s ease;
+  
+  &:last-child {
+    border-bottom: none;
+  }
+  
+  .archive__item-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #212121;
+    
+    a {
+      color: #212121 !important;
+      text-decoration: none !important;
+      
+      &:hover {
+        color: #b12b32 !important;
+      }
+    }
+  }
+  
+  p {
+    font-size: 0.95rem;
+    color: #212121;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Link icons zoom hover */
+  .zoom {
+    font-size: 1.1rem;
+    margin-right: 0.75rem;
+    color: #718096 !important;
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+    
+    &:hover {
+      color: #b12b32 !important;
+      transform: scale(1.15);
+    }
+  }
+}
+
+/* Footer Styling */
+.page__footer {
+  background-color: #f0f0f0 !important;
+  border-top: 1px solid #e0e0e0 !important;
+  padding: 2.5rem 1.5rem !important;
+  margin-top: 3rem !important;
+  color: #212121 !important;
+  text-align: center !important;
+  font-size: 0.9rem !important;
+  width: 100% !important;
+  clear: both !important;
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  box-sizing: border-box !important;
+  z-index: 20 !important;
+  
+  a {
+    color: #b12b32 !important;
+    text-decoration: none !important;
+    
+    &:hover {
+      text-decoration: underline !important;
+    }
+  }
+}
+
+.page__footer-copyright {
+  margin-top: 0.5rem;
+}
+
+/* ==========================================================================
+   PUBLICATIONS PAGE AND DETAIL PAGE STYLING (ROBERTA VALTORTA STYLE MATCH)
+   ========================================================================== */
+
+/* Intro text styling */
+.publications__intro {
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+  color: #555555 !important;
+  margin-bottom: 1.5rem;
+  
+  a {
+    color: #b12b32 !important;
+    text-decoration: underline !important;
+    font-weight: 500;
+    
+    &:hover {
+      color: #8c2025 !important;
+    }
+  }
+}
+
+/* List card item style */
+.publication-item__card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #edf2f7;
+  gap: 1.5rem;
+  
+  @media (min-width: 600px) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Thumbnail Image styling */
+.publication-item__image {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 170px;
+  height: 105px;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: #f7fafc;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  
+  .publication-item__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+/* Content column layout */
+.publication-item__content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Title, authors, venue styles */
+.publication-item__title, .page__inner-wrap h1.page__title {
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0.5rem !important;
+  
+  a {
+    color: #b12b32 !important;
+    text-decoration: underline !important;
+    
+    &:hover {
+      color: #8c2025 !important;
+    }
+  }
+}
+
+.publication-item__authors, .publication__authors {
+  font-size: 15px !important;
+  line-height: 1.4 !important;
+  color: #2d3748 !important;
+  margin: 0 0 0.3rem 0 !important;
+  
+  strong {
+    font-weight: 700 !important;
+  }
+}
+
+.publication-item__venue, .publication__venue {
+  font-size: 14px !important;
+  line-height: 1.4 !important;
+  color: #718096 !important;
+  font-style: normal !important;
+  margin: 0 0 0.5rem 0 !important;
+  
+  i {
+    font-style: italic !important;
+  }
+}
+
+.publication__doi {
+  font-size: 14px !important;
+  color: #718096 !important;
+  margin: 0 0 1rem 0 !important;
+  
+  a {
+    color: #b12b32 !important;
+    text-decoration: underline !important;
+    
+    &:hover {
+      color: #8c2025 !important;
+    }
+  }
+}
+
+/* Generic Custom Buttons matching Roberta's */
+.pub-btn, button.pub-btn {
+  background-color: #ffffff !important;
+  border: 1px solid #cbd5e0 !important;
+  border-radius: 4px !important;
+  padding: 0.35rem 0.75rem !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  color: #4a5568 !important;
+  cursor: pointer !important;
+  display: inline-block !important;
+  margin-right: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease-in-out !important;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05) !important;
+  outline: none !important;
+  line-height: normal !important;
+  
+  &:hover {
+    background-color: #f7fafc !important;
+    border-color: #a0aec0 !important;
+    color: #2d3748 !important;
+    text-decoration: none !important;
+  }
+}
+
+.publication-item__buttons, .publication__buttons {
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* BibTeX Display Container styling */
+.bibtex-container {
+  background-color: #f7fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 6px !important;
+  padding: 1rem !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1.5rem !important;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.02) !important;
+  
+  .bibtex-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+    padding-bottom: 0.5rem !important;
+    margin-bottom: 0.75rem !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    color: #4a5568 !important;
+  }
+  
+  .copy-btn {
+    background-color: #ffffff !important;
+    border: 1px solid #cbd5e0 !important;
+    border-radius: 4px !important;
+    padding: 0.2rem 0.5rem !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    color: #4a5568 !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    
+    &:hover {
+      background-color: #edf2f7 !important;
+      color: #2d3748 !important;
+    }
+  }
+  
+  pre {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    overflow-x: auto !important;
+  }
+  
+  code {
+    font-family: Monaco, Consolas, "Lucida Console", monospace !important;
+    font-size: 13px !important;
+    color: #2d3748 !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    
+    &:before, &:after {
+      display: none !important;
+    }
+  }
+}
+
+/* Abstract on Detail Page */
+.publication__abstract {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  
+  h3 {
+    font-size: 1.15rem !important;
+    font-weight: 700 !important;
+    color: #212121 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  p {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    color: #2d3748 !important;
+    margin: 0 !important;
+  }
+}
+
+/* Custom Share layout matching Roberta's */
+.publication__share {
+  clear: both !important;
+  display: flex !important;
+  align-items: center !important;
+  margin-top: 2.5rem !important;
+  border-top: 1px solid #edf2f7 !important;
+  padding-top: 1.5rem !important;
+  gap: 1.2rem !important;
+  margin-bottom: 2rem !important;
+  
+  .share-title {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #718096 !important;
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+  }
+  
+  a {
+    color: #b12b32 !important;
+    font-size: 16px !important;
+    transition: color 0.15s ease-in-out !important;
+    border: none !important;
+    text-decoration: none !important;
+    
+    &:hover {
+      color: #8c2025 !important;
+      text-decoration: none !important;
+    }
+  }
+}
+
+/* Modal styling for Cite Modal matching Roberta's */
+.modal-overlay {
+  position: fixed !important;
+  z-index: 10000 !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.modal-content {
+  background-color: #ffffff !important;
+  padding: 1.5rem 2rem !important;
+  width: 90% !important;
+  max-width: 550px !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  position: relative !important;
+  overflow-y: auto !important;
+  max-height: 85vh !important;
+  box-sizing: border-box !important;
+  text-align: left !important;
+}
+
+.modal-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  border-bottom: 1px solid #edf2f7 !important;
+  padding-bottom: 0.5rem !important;
+  margin-bottom: 1.25rem !important;
+  
+  h2 {
+    font-size: 1.35rem !important;
+    font-weight: 700 !important;
+    color: #212121 !important;
+    margin: 0 !important;
+  }
+}
+
+.close-modal-btn {
+  font-size: 28px !important;
+  font-weight: bold !important;
+  color: #718096 !important;
+  cursor: pointer !important;
+  user-select: none !important;
+  position: absolute !important;
+  top: 15px !important;
+  right: 20px !important;
+  line-height: 1 !important;
+  transition: color 0.15s ease !important;
+  z-index: 10002 !important;
+  
+  &:hover {
+    color: #212121 !important;
+  }
+}
+
+.cite-section {
+  margin-bottom: 1.25rem !important;
+  cursor: pointer !important;
+  padding: 0.5rem 0.75rem !important;
+  border-radius: 6px !important;
+  transition: background-color 0.15s ease !important;
+  
+  &:hover {
+    background-color: #f7fafc !important;
+    
+    .copy-status {
+      opacity: 1 !important;
+    }
+  }
+}
+
+.cite-section-header {
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  font-size: 13px !important;
+  color: #2d3748 !important;
+  margin-bottom: 0.25rem !important;
+  gap: 0.5rem !important;
+  
+  strong {
+    font-weight: 700 !important;
+    color: #212121 !important;
+  }
+}
+
+.copy-status {
+  font-size: 11px !important;
+  color: #718096 !important;
+  opacity: 0.8;
+  transition: opacity 0.15s ease !important;
+  
+  &.copied {
+    color: #48bb78 !important; /* Green color when copied */
+    opacity: 1 !important;
+  }
+}
+
+.cite-text {
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  color: #4a5568 !important;
+  word-wrap: break-word !important;
+}
+
+.bibtex-code-box {
+  background-color: #f7fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 6px !important;
+  padding: 0.75rem !important;
+  overflow-x: auto !important;
+  max-height: 200px !important;
+  
+  pre {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+  }
+  
+  code {
+    font-family: Monaco, Consolas, "Lucida Console", monospace !important;
+    font-size: 12px !important;
+    color: #2d3748 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    
+    &:before, &:after {
+      display: none !important;
+    }
+  }
+}
+
+/* ==========================================================================
+   CV PAGE PDF READER WINDOW STYLING
+   ========================================================================== */
+
+.pdf-container {
+  position: relative;
+  background-color: #2b2b2b;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
+  
+  &:-webkit-full-screen {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0 !important;
+    background-color: #1a1a1a !important;
+    
+    #pdfIframe {
+      height: calc(100vh - 50px) !important;
+    }
+  }
+  
+  &:fullscreen {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0 !important;
+    background-color: #1a1a1a !important;
+    
+    #pdfIframe {
+      height: calc(100vh - 50px) !important;
+    }
+  }
+}
+
+.pdf-control-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2b2b2b;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #444;
+}
+
+.pdf-control-left, .pdf-control-right {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.pdf-btn {
+  background-color: #3a3a3a !important;
+  border: 1px solid #555 !important;
+  color: #eeeeee !important;
+  padding: 0.4rem 0.8rem !important;
+  font-size: 13px !important;
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 400 !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.4rem !important;
+  transition: all 0.2s ease-in-out !important;
+  margin: 0 !important;
+  line-height: 1.4 !important;
+  
+  &:hover {
+    background-color: #4a4a4a !important;
+    color: #ffffff !important;
+    border-color: #666 !important;
+  }
+  
+  i {
+    font-size: 13px !important;
+  }
+}
+
+.pdf-btn.download-btn {
+  background-color: #444444 !important;
+  
+  &:hover {
+    background-color: #555555 !important;
+  }
+}
+
+#pdfIframe {
+  display: block;
+  border: none;
+  background-color: #333;
+}
+
+/* Remove unused right padding from archive pages to allow content to expand */
+.archive {
+  padding-right: 0 !important;
+}
+
+/* Make profile social links always visible in a normal relative flow (prevents tablet/mobile overlap) */
+.author__urls {
+  display: block !important;
+  position: relative !important;
+  margin-top: 15px !important;
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  z-index: 1 !important;
+  
+  &:before {
+    display: none !important;
+  }
+}
+
+.author__urls-wrapper {
+  button {
+    display: none !important;
+  }
+}
+
+/* Improve header links responsiveness on tablet/medium screen widths */
+@media (max-width: 924px) {
+  .greedy-nav .visible-links li a {
+    margin: 0 0.5rem !important;
+    font-size: 15px !important;
+  }
+  .site-title {
+    margin-right: 1rem !important;
+    font-size: 17px !important;
+  }
+  .greedy-nav button {
+    background-color: transparent !important;
+    border: none !important;
+    color: #212121 !important;
+    padding: 0.5rem !important;
+    margin-left: 0.5rem !important;
+    cursor: pointer !important;
+  }
+}
+
+/* Make hamburger toggle lines (navicon) dark to match the header styling */
+.navicon {
+  background: #212121 !important;
+  
+  &:before,
+  &:after {
+    background: #212121 !important;
+  }
+}
+.close .navicon {
+  background: transparent !important;
+}
+
+/* Prevent menu links from overlapping the hamburger toggle button when visible */
+.greedy-nav button:not(.hidden) ~ .visible-links {
+  margin-right: 45px !important;
 }

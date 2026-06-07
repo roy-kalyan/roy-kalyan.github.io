@@ -1,5 +1,8 @@
 # main links links
 main:
+  - title: "Home"
+    url: /
+
   - title: "Work Experience"
     url: /experience/
   
@@ -15,7 +18,7 @@ main:
   - title: "Special Accomplishments"
     url: /accomplishments/
     
-  - title: "Curriculum Vitae"
+  - title: "CV"
     url: /cv/
     
 #  - title: "Contact"

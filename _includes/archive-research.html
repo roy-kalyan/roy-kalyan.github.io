@@ -1,0 +1,37 @@
+{% include base_path %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<div class="publication-item__card">
+  {% if post.thumbnail %}
+    <div class="publication-item__image">
+      <a href="{{ base_path }}{{ post.url }}">
+        <img src="{{ base_path }}{{ post.thumbnail }}" alt="{{ post.title }}" class="publication-item__img">
+      </a>
+    </div>
+  {% endif %}
+  
+  <div class="publication-item__content">
+    <h2 class="publication-item__title" itemprop="headline">
+      <a href="{{ base_path }}{{ post.url }}">{{ title }}</a>
+    </h2>
+    
+    {% if post.excerpt %}
+      <p class="blt-p" style="margin-top: 0.5rem; font-size: 15px; line-height: 1.6; color: #2d3748; margin-bottom: 0.5rem;">{{ post.excerpt }}</p>
+    {% endif %}
+    
+    <div class="publication-item__buttons" style="margin-top: 0.75rem;">
+      <a href="{{ base_path }}{{ post.url }}" class="pub-btn">Read More</a>
+      {% if post.paperurl %}
+        <a href="{{ post.paperurl }}" class="pub-btn" target="_blank">View PDF</a>
+      {% endif %}
+      {% if post.link %}
+        <a href="{{ post.link }}" class="pub-btn" target="_blank">Direct Link</a>
+      {% endif %}
+    </div>
+  </div>
+</div>

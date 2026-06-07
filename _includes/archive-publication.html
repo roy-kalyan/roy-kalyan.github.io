@@ -1,0 +1,41 @@
+{% include base_path %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<div class="publication-item__card">
+  {% if post.thumbnail %}
+    <div class="publication-item__image">
+      <a href="{{ base_path }}{{ post.url }}">
+        <img src="{{ base_path }}{{ post.thumbnail }}" alt="{{ post.title }}" class="publication-item__img">
+      </a>
+    </div>
+  {% endif %}
+  
+  <div class="publication-item__content">
+    <h2 class="publication-item__title" itemprop="headline">
+      <a href="{{ base_path }}{{ post.url }}">{{ title }}</a>
+    </h2>
+    
+    {% if post.citation %}
+      {% assign citation_parts = post.citation | split: "<br/>" %}
+      {% assign authors = citation_parts[0] | replace: "<ins>Kalyan Roy</ins>", "<strong>Kalyan Roy</strong>" | replace: "<ins>K Roy</ins>", "<strong>Kalyan Roy</strong>" %}
+      {% assign venue_details = citation_parts[1] %}
+      
+      <p class="publication-item__authors">{{ authors }}</p>
+      <p class="publication-item__venue">{{ venue_details }}</p>
+    {% endif %}
+    
+    <div class="publication-item__buttons">
+      {% if post.paperurl %}
+        <a href="{{ post.paperurl }}" class="pub-btn" target="_blank">View PDF</a>
+      {% endif %}
+      {% if post.link %}
+        <a href="{{ post.link }}" class="pub-btn" target="_blank">Publisher Page</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
