@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Kalyan Roy"
 title_separator          : "-"
 name                     : &name "Kalyan Roy"
-description              : &description "personal description"
+description              : &description "Bachelor of Science in Computer Science and Engineering. Research interests in Algorithms, Graph Theory, Cryptography, and Machine Learning."
 url                      : https://roy-kalyan.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "roy-kalyan/roy-kalyan.github.io"
@@ -106,7 +106,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : 
+  linkedin         : "roy-kalyan"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
