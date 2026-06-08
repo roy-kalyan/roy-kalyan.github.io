@@ -218,52 +218,54 @@ body {
   }
 }
 
-/* Social links and metadata in sidebar - Red and Underlined */
-.author__urls-wrapper {
-  ul.author__urls {
-    display: block !important;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    
-    li {
-      margin-bottom: 0.2rem !important;
-      font-size: 16px !important;
-      color: #212121;
-      display: flex;
-      align-items: center;
-      font-family: "Open Sans", sans-serif !important;
+/* Social links and metadata in sidebar - Red and Underlined (Desktop) */
+@media (min-width: 925px) {
+  .author__urls-wrapper {
+    ul.author__urls {
+      display: block !important;
+      list-style: none;
+      padding: 0;
+      margin: 0;
       
-      /* Hide standard location/employer pin icon for clean text layout */
-      i.fa-map-marker-alt, i.fa-map-marker {
-        display: none !important;
-      }
-      
-      i, svg {
-        margin-right: 0.4rem !important;
-        width: 1em !important;
-        height: 1em !important;
-        color: #718096 !important; /* Grey icons */
-        text-align: center;
-        display: inline-block;
-      }
-      
-      a {
-        color: #b12b32 !important; /* Red links */
-        text-decoration: underline !important; /* Underlined links */
-        display: inline-block !important; /* Inline block so underlines fit text! */
+      li {
+        margin-bottom: 0.2rem !important;
+        font-size: 16px !important;
+        color: #212121;
+        display: flex;
+        align-items: center;
         font-family: "Open Sans", sans-serif !important;
-        transition: color 0.2s ease-in-out;
         
-        &:hover {
-          color: #8c2025 !important;
+        /* Hide standard location/employer pin icon for clean text layout */
+        i.fa-map-marker-alt, i.fa-map-marker {
+          display: none !important;
+        }
+        
+        i, svg {
+          margin-right: 0.4rem !important;
+          width: 1em !important;
+          height: 1em !important;
+          color: #718096 !important; /* Grey icons */
+          text-align: center;
+          display: inline-block;
+        }
+        
+        a {
+          color: #b12b32 !important; /* Red links */
+          text-decoration: underline !important; /* Underlined links */
+          display: inline-block !important; /* Inline block so underlines fit text! */
+          font-family: "Open Sans", sans-serif !important;
+          transition: color 0.2s ease-in-out;
+          
+          &:hover {
+            color: #8c2025 !important;
+          }
         }
       }
     }
-  }
-  
-  button {
-    display: none !important;
+    
+    button {
+      display: none !important;
+    }
   }
 }
 
@@ -949,25 +951,27 @@ body {
   padding-right: 0 !important;
 }
 
-/* Make profile social links always visible in a normal relative flow (prevents tablet/mobile overlap) */
-.author__urls {
-  display: block !important;
-  position: relative !important;
-  margin-top: 15px !important;
-  padding: 0 !important;
-  border: none !important;
-  box-shadow: none !important;
-  background: transparent !important;
-  z-index: 1 !important;
-  
-  &:before {
-    display: none !important;
+/* Make profile social links always visible in a normal relative flow (prevents tablet/mobile overlap) (Desktop) */
+@media (min-width: 925px) {
+  .author__urls {
+    display: block !important;
+    position: relative !important;
+    margin-top: 15px !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    z-index: 1 !important;
+    
+    &:before {
+      display: none !important;
+    }
   }
-}
 
-.author__urls-wrapper {
-  button {
-    display: none !important;
+  .author__urls-wrapper {
+    button {
+      display: none !important;
+    }
   }
 }
 
@@ -1008,3 +1012,182 @@ body {
 .greedy-nav button:not(.hidden) ~ .visible-links {
   margin-right: 45px !important;
 }
+
+/* Mobile-only Adjustments (max-width: 924px) for Roberta-style centered layout and hidden links */
+@media (max-width: 924px) {
+  /* Center the sidebar containing avatar, name, and bio on mobile */
+  .sidebar {
+    text-align: center !important;
+    margin-top: -85px !important; /* Pull up to overlap the custom banner */
+    margin-bottom: 1.5em !important;
+    position: relative !important;
+    z-index: 15 !important;
+    border: none !important;
+    background: transparent !important;
+  }
+
+  .author__avatar {
+    text-align: center !important;
+    display: block !important;
+    width: 100% !important;
+    margin-bottom: 0.5rem !important;
+
+    img {
+      width: 110px !important;
+      height: 110px !important;
+      max-width: 110px !important;
+      margin: 0 auto !important; /* Centered horizontally */
+      border-radius: 0% !important; /* Square avatar matching Roberta's style */
+      border: 3px solid #ffffff !important;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+    }
+  }
+
+  .author__content {
+    text-align: center !important;
+    display: block !important;
+    padding: 0 !important;
+
+    .author__name {
+      font-size: 1.3rem !important;
+      margin-top: 8px !important;
+      margin-bottom: 4px !important;
+    }
+
+    .author__bio {
+      font-size: 0.9rem !important;
+      margin-top: 0 !important;
+      margin-bottom: 8px !important;
+    }
+  }
+
+  /* Hide default email address under name on mobile (will show in toggled list) */
+  .author__email {
+    display: none !important;
+  }
+
+  /* Style mobile-only email item in social links list */
+  .author__email-mobile-only {
+    display: flex !important;
+    align-items: center !important;
+    margin-bottom: 0.4rem !important;
+    font-size: 15px !important;
+    font-family: "Open Sans", sans-serif !important;
+
+    i, svg {
+      margin-right: 0.4rem !important;
+      width: 1em !important;
+      height: 1em !important;
+      color: #718096 !important;
+      text-align: center;
+      display: inline-block;
+    }
+
+    a {
+      color: #b12b32 !important;
+      text-decoration: underline !important;
+      display: inline-block !important;
+      transition: color 0.2s ease-in-out;
+
+      &:hover {
+        color: #8c2025 !important;
+      }
+    }
+  }
+
+  /* Center the Contact toggle button and style as a red outlined button */
+  .author__urls-wrapper {
+    display: block !important;
+    text-align: center !important;
+    margin-top: 10px !important;
+    cursor: pointer !important;
+
+    button {
+      display: inline-block !important; /* Re-enable button on mobile */
+      margin: 0 auto !important;
+      padding: 0.4rem 1.5rem !important;
+      border: 1px solid #b12b32 !important;
+      background-color: transparent !important;
+      color: #b12b32 !important;
+      border-radius: 4px !important;
+      font-size: 14px !important;
+      font-weight: 600 !important;
+      cursor: pointer !important;
+      transition: all 0.2s ease !important;
+
+      &:hover, &.open {
+        background-color: #b12b32 !important;
+        color: #ffffff !important;
+      }
+    }
+
+    /* Toggled social/contact links list - Expand inline under the button */
+    ul.author__urls {
+      display: none; /* Controlled by jQuery fadeToggle */
+      position: relative !important;
+      margin: 15px auto 0 !important;
+      padding: 10px 0 !important;
+      border: none !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      width: fit-content !important;
+      max-width: 250px !important;
+      text-align: left !important;
+      z-index: 10 !important;
+
+      &:before, &:after {
+        display: none !important; /* Remove arrow overlay */
+      }
+
+      li {
+        margin-bottom: 0.4rem !important;
+        font-size: 15px !important;
+        font-family: "Open Sans", sans-serif !important;
+        display: flex;
+        align-items: center;
+
+        i, svg {
+          margin-right: 0.4rem !important;
+          width: 1em !important;
+          height: 1em !important;
+          color: #718096 !important;
+          text-align: center;
+          display: inline-block;
+        }
+
+        a {
+          color: #b12b32 !important;
+          text-decoration: underline !important;
+          display: inline-block !important;
+          transition: color 0.2s ease-in-out;
+
+          &:hover {
+            color: #8c2025 !important;
+          }
+        }
+      }
+    }
+  }
+
+  /* Force all main header links into the hamburger menu */
+  .greedy-nav {
+    .visible-links {
+      opacity: 0 !important;
+      pointer-events: none !important;
+      position: absolute !important;
+      
+      li {
+        width: 750px !important;
+        min-width: 750px !important;
+      }
+    }
+  }
+}
+
+/* Hide mobile-only email address on desktop views */
+@media (min-width: 925px) {
+  .author__email-mobile-only {
+    display: none !important;
+  }
+}
+
