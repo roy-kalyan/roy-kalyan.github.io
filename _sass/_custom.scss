@@ -143,13 +143,14 @@ body {
   margin-bottom: 2em;
   
   @media (min-width: 925px) {
-    width: 25% !important;
+    width: 180px !important;
     float: left;
-    margin-right: 6% !important;
+    margin-left: 12% !important; /* Shift avatar and contact info closer to content */
+    margin-right: 1rem !important; /* Reduce gap to allow content to shift further left */
     position: sticky;
     top: 80px;
     z-index: 10;
-    margin-top: -100px !important; /* Overlap the banner */
+    margin-top: -125px !important; /* Overlap the banner (half of 170px avatar + 40px container padding) */
   }
 }
 
@@ -270,11 +271,11 @@ body {
 }
 
 /* Content Area styling */
-.page {
+.page, .archive {
   @media (min-width: 925px) {
-    width: 69% !important;
+    width: 77% !important; /* Shift content slightly left by increasing width to 77% */
     float: right;
-    padding-left: 1rem;
+    padding-left: 1rem !important;
   }
   
   .page__inner-wrap {
@@ -1018,7 +1019,7 @@ body {
   /* Center the sidebar containing avatar, name, and bio on mobile */
   .sidebar {
     text-align: center !important;
-    margin-top: -85px !important; /* Pull up to overlap the custom banner */
+    margin-top: -95px !important; /* Pull up to overlap the custom banner (half of 110px avatar + 40px container padding) */
     margin-bottom: 1.5em !important;
     position: relative !important;
     z-index: 15 !important;

@@ -58,7 +58,7 @@ redirect_from:
   document.addEventListener('MSFullscreenChange', handleFullscreenChange);
 </script>
 
-Last updated: September 28, 2024
+Last updated: June 12, 2026
 
 <!---
 
