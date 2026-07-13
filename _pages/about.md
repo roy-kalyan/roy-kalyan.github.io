@@ -8,13 +8,15 @@ redirect_from:
   - /about.html
 ---
 
-I am pleased to welcome you to my online portfolio. I have obtained a Bachelor of Science degree in Computer Science and Engineering from [North South University](http://www.northsouth.edu/), Bangladesh.
+I am a researcher and AI entrepreneur with a Bachelor of Science in Computer Science and Engineering from [North South University](https://www.northsouth.edu/), Bangladesh. My work focuses on algorithms, graph theory, and machine learning, with a particular interest in developing efficient computational methods and intelligent systems.
 
-During the final year of my undergraduate program, I had the privilege of serving as a Teaching Assistant. In this capacity, I provided support and guidance to students enrolled in courses focused on C programming, Data Structures, and Algorithms.
+During my undergraduate studies, I conducted research on Bangla Named Entity Recognition, where I developed deep learning models and contributed to building one of the first large-scale annotated datasets for the task. This work was published in the Journal of Intelligent & Fuzzy Systems in 2019.
 
-Additionally, I worked as a Research Assistant at [North South University](http://www.northsouth.edu/), Bangladesh, where I conducted research on Graph Algorithms under the guidance of [Dr. Ahsanur Rahman](http://ece.northsouth.edu/people/dr-ahsanur-rahman/).
+After graduation, I joined [North South University](https://www.northsouth.edu/) as a Research Assistant under [Dr. Ahsanur Rahman](https://ece.northsouth.edu/people/dr-ahsanur-rahman/), focusing on graph algorithms. This research led to A Fast Exact Algorithm to Enumerate Maximal Pseudo-cliques in Large Sparse Graphs, which was published at ACM SIGKDD 2024.
 
-My primary research interests lie in the areas of Algorithms, Graph Theory, Cryptography, and Machine learning. I am constantly motivated to learn more and delve deeper into these fascinating fields.
+Alongside my research, I was an active competitive programmer and participated in the ICPC Dhaka Regional Contest. I also served as a Teaching Assistant for courses in C Programming, Data Structures, and Design and Analysis of Algorithms, helping mentor undergraduate students and strengthen their problem-solving skills.
+
+Today, I continue to explore research and entrepreneurial opportunities at the intersection of algorithms, artificial intelligence, and large-scale data analysis. As a co-founder at [Talosyn IT](https://talosynit.com/) and [CodeAlignR](https://www.codealignr.com/), I drive the integration of cutting-edge research and modern technologies, focusing on leveraging advanced AI workflows, autonomous systems, and data-driven solutions to solve complex, real-world challenges.
 
 <!---
 

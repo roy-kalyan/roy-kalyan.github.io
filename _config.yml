@@ -85,9 +85,19 @@ author:
   name             : "Kalyan Roy"
   avatar           : "kalyan.jpg"
   banner           : "images/academic_portfolio_banner.svg"
-  bio              : 
+  bio              : "Researcher<br>AI Entrepreneur"
   location         :
   employer         :
+  affiliations:
+    - role: "Co-founder"
+      organization: "TaloSyn IT"
+      url: "https://talosynit.com/"
+      address: "House - 30, Road - 20, Sector - 13, Uttara, Dhaka"
+      children:
+        - role: "Co-founder"
+          organization: "CodeAlignR"
+          url: "https://www.codealignr.com/"
+          address: "117 Dickens Dr, Lancaster, PA, 17603"
   pubmed           :
   orcid            : "https://orcid.org/0009-0000-4915-2169"
   googlescholar    : "https://scholar.google.com/citations?user=BFG5dRAAAAAJ&hl=en"

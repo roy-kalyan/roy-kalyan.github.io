@@ -22,6 +22,40 @@
     {% endif %}
   </div>
 
+  {% if author.affiliations %}
+  <div class="author__affiliations">
+    {% for affiliation in author.affiliations %}
+    <div class="affiliation">
+      <p class="affiliation__role">{{ affiliation.role }}</p>
+      {% if affiliation.url %}
+        <p class="affiliation__org"><a href="{{ affiliation.url }}">{{ affiliation.organization }}</a></p>
+      {% else %}
+        <p class="affiliation__org">{{ affiliation.organization }}</p>
+      {% endif %}
+      {% if affiliation.address %}
+        <p class="affiliation__address">{{ affiliation.address }}</p>
+      {% endif %}
+      {% if affiliation.children %}
+        {% for child in affiliation.children %}
+        <div class="affiliation affiliation--subsidiary">
+          <p class="affiliation__role">{{ child.role }}</p>
+          {% if child.url %}
+            <p class="affiliation__org"><a href="{{ child.url }}">{{ child.organization }}</a></p>
+          {% else %}
+            <p class="affiliation__org">{{ child.organization }}</p>
+          {% endif %}
+          <p class="affiliation__relation">a subsidiary of {{ affiliation.organization }}</p>
+          {% if child.address %}
+            <p class="affiliation__address">{{ child.address }}</p>
+          {% endif %}
+        </div>
+        {% endfor %}
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">Contact</button>
     <ul class="author__urls social-icons">
