@@ -198,8 +198,12 @@
   .affiliation.affiliation--accent {
     margin-bottom: 18px;
     padding: 5px 0 5px 14px;
-    border-bottom: none;
+    border: none;
     border-left: 3px solid #b12b32;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    box-sizing: border-box;
 
     .affiliation__role {
       margin-bottom: 7px;
@@ -228,6 +232,26 @@
     .affiliation__arrow {
       font-size: 0.75em;
       opacity: 0.65;
+    }
+
+    @media (max-width: 924px) {
+      width: calc(100% - 40px);
+      max-width: 320px;
+      margin: 12px auto 20px;
+      padding-left: 20px;
+      border-left: none;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 3px;
+        height: 44px;
+        background: #b12b32;
+        transform: translateY(-50%);
+      }
     }
   }
 

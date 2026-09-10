@@ -480,23 +480,40 @@ body {
 .publication-item__image {
   flex-shrink: 0;
   width: 100%;
-  max-width: 170px;
-  height: 105px;
+  max-width: 180px;
+  aspect-ratio: 16 / 10;
   overflow: hidden;
   border-radius: 4px;
   background-color: #f7fafc;
   border: 1px solid #e2e8f0;
   box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
   
   .publication-item__img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    padding: 0.25rem;
+    box-sizing: border-box;
     display: block;
     transition: transform 0.3s ease;
     
     &:hover {
       transform: scale(1.05);
+    }
+  }
+
+  @media (max-width: 599px) {
+    max-width: none;
+    aspect-ratio: 16 / 9;
+
+    .publication-item__img {
+      padding: 0.5rem;
     }
   }
 }
@@ -1191,4 +1208,3 @@ body {
     display: none !important;
   }
 }
-
