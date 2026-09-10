@@ -8,15 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a researcher and AI entrepreneur with a Bachelor of Science in Computer Science and Engineering from [North South University](https://www.northsouth.edu/), Bangladesh. My work focuses on algorithms, graph theory, and machine learning, with a particular interest in developing efficient computational methods and intelligent systems.
-
-During my undergraduate studies, I conducted research on Bangla Named Entity Recognition, where I developed deep learning models and contributed to building one of the first large-scale annotated datasets for the task. This work was published in the Journal of Intelligent & Fuzzy Systems in 2019.
-
-After graduation, I joined [North South University](https://www.northsouth.edu/) as a Research Assistant under [Dr. Ahsanur Rahman](https://ece.northsouth.edu/people/dr-ahsanur-rahman/), focusing on graph algorithms. This research led to A Fast Exact Algorithm to Enumerate Maximal Pseudo-cliques in Large Sparse Graphs, which was published at ACM SIGKDD 2024.
-
-Alongside my research, I was an active competitive programmer and participated in the ICPC Dhaka Regional Contest. I also served as a Teaching Assistant for courses in C Programming, Data Structures, and Design and Analysis of Algorithms, helping mentor undergraduate students and strengthen their problem-solving skills.
-
-Today, I continue to explore research and entrepreneurial opportunities at the intersection of algorithms, artificial intelligence, and large-scale data analysis. As a co-founder at [Talosyn IT](https://talosynit.com/) and [CodeAlignR](https://www.codealignr.com/), I drive the integration of cutting-edge research and modern technologies, focusing on leveraging advanced AI workflows, autonomous systems, and data-driven solutions to solve complex, real-world challenges.
+I am a researcher and IT entrepreneur with a Bachelor of Science in Computer Science and Engineering from [North South University](https://www.northsouth.edu/), Bangladesh. My work spans graph algorithms, natural language processing, and machine learning, with research published at venues including [ACM SIGKDD](https://dl.acm.org/doi/10.1145/3637528.3672066). During my undergraduate studies, I was active in competitive programming and participated in several national-level contests, including the ICPC Dhaka Regional Contest. I am also a co-founder of [TaloSyn IT](https://talosynit.com/) and [CodeAlignR](https://www.codealignr.com/), where I work on artificial intelligence-driven technologies and practical software solutions. My research interests include algorithms, graph theory, machine learning, and natural language processing.
 
 <!---
 
