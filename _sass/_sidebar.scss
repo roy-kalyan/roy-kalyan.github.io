@@ -238,19 +238,30 @@
       width: calc(100% - 40px);
       max-width: 320px;
       margin: 12px auto 20px;
-      padding-left: 20px;
+      padding-left: 0;
       border-left: none;
       position: relative;
 
+      .affiliation__role {
+        position: relative;
+        margin-bottom: 4px;
+        padding-bottom: 10px;
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          width: 44px;
+          height: 3px;
+          background: #b12b32;
+          transform: translateX(-50%);
+        }
+      }
+
       &::before {
         content: "";
-        position: absolute;
-        left: 0;
-        top: 50%;
-        width: 3px;
-        height: 44px;
-        background: #b12b32;
-        transform: translateY(-50%);
+        display: none;
       }
     }
   }
