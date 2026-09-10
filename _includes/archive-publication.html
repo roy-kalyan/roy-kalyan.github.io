@@ -10,7 +10,7 @@
   {% if post.thumbnail %}
     <div class="publication-item__image">
       <a href="{{ base_path }}{{ post.url }}">
-        <img src="{{ base_path }}{{ post.thumbnail }}" alt="{{ post.title }}" class="publication-item__img">
+        <img src="{{ base_path }}{{ post.thumbnail }}" alt="{{ post.title }}" class="publication-item__img" width="640" height="640" loading="lazy" decoding="async">
       </a>
     </div>
   {% endif %}
@@ -31,10 +31,10 @@
     
     <div class="publication-item__buttons">
       {% if post.paperurl %}
-        <a href="{{ post.paperurl }}" class="pub-btn" target="_blank">View PDF</a>
+        <a href="{{ post.paperurl }}" class="pub-btn" target="_blank" rel="noopener noreferrer">View PDF</a>
       {% endif %}
       {% if post.link %}
-        <a href="{{ post.link }}" class="pub-btn" target="_blank">Publisher Page</a>
+        <a href="{{ post.link }}" class="pub-btn" target="_blank" rel="noopener noreferrer">Publisher Page</a>
       {% endif %}
     </div>
   </div>

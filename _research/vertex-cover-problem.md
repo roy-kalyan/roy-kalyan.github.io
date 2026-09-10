@@ -4,7 +4,8 @@ layout: single-portfolio
 thumbnail: /images/research/vertex-cover.png
 excerpt: "A vertex cover is a set of nodes that touches every edge in a graph; finding the smallest one is a classic, computationally hard problem with broad applications. This project develops an approximation algorithm to find minimal or near-minimal vertex covers efficiently on large networks. (Ongoing.)"
 collection: research
-order_number: 40
+order_number: 20
+mathjax: true
 header: 
   og_image: "research/vertex-cover.png"
 ---

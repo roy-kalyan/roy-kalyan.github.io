@@ -5,21 +5,15 @@ main:
 
   - title: "Work Experience"
     url: /experience/
-  
+
   - title: "Publications"
-    url: /publications/  
-    
+    url: /publications/
+
   - title: "Research"
     url: /research/
 
-#  - title: "Teaching"
-#    url: /teaching/
-
   - title: "Special Accomplishments"
     url: /accomplishments/
-    
+
   - title: "CV"
     url: /cv/
-    
-#  - title: "Contact"
-#    url: /contact/

@@ -3,35 +3,27 @@
    ========================================================================== */
 
 $(document).ready(function(){
-   // Sticky footer
-  var bumpIt = function() {
-      $("body").css("margin-bottom", $(".page__footer").outerHeight(true));
-    },
-    didResize = false;
-
-  bumpIt();
-
-  $(window).resize(function() {
-    didResize = true;
-  });
-  setInterval(function() {
-    if (didResize) {
-      didResize = false;
-      bumpIt();
-    }
-  }, 250);
+  // Sticky footer is handled in CSS (flexbox on body); no JS margin needed.
   // FitVids init
   $("#main").fitVids();
 
   // init sticky sidebar
   $(".sticky").Stickyfill();
 
+  // Tracks the last applied layout mode so the sidebar is only re-initialised
+  // when the mode actually changes. Re-running this on every resize used to
+  // collapse the open "Contact" list whenever a mobile browser's address bar
+  // showed/hid itself (which fires a resize event).
+  var lastSideBarMode = null;
+
   var stickySideBar = function(){
     var show = $(".author__urls-wrapper button").length === 0 ? $(window).width() > 1024 : !$(".author__urls-wrapper button").is(":visible");
-    // console.log("has button: " + $(".author__urls-wrapper button").length === 0);
-    // console.log("Window Width: " + windowWidth);
-    // console.log("show: " + show);
-    //old code was if($(window).width() > 1024)
+
+    if (show === lastSideBarMode) {
+      return;
+    }
+    lastSideBarMode = show;
+
     if (show) {
       // fix
       Stickyfill.rebuild();
@@ -41,6 +33,7 @@ $(document).ready(function(){
       // unfix
       Stickyfill.stop();
       $(".author__urls").hide();
+      $(".author__urls-wrapper button").removeClass("open");
     }
   };
 

@@ -9,13 +9,25 @@ body {
   line-height: 1.6 !important;
   color: #212121 !important;
   background-color: #ffffff !important;
+  /* Sticky footer: the footer is pushed to the bottom of short pages without
+     taking it out of the document flow (which used to make it overlap the
+     bottom of #main). Replaces the old JS body margin-bottom hack. */
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: 100vh !important;
+  margin-bottom: 0 !important;
+  /* _base.scss reserves 9em at the bottom for the old absolutely-positioned
+     footer; the flexbox layout above makes that dead space. */
+  padding-bottom: 0 !important;
 }
 
 /* Main layout containers */
 #main {
   max-width: 1200px !important;
   margin: 0 auto;
+  margin-bottom: 3rem;
   padding: 2.5em 1.5em;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: #ffffff !important;
@@ -408,16 +420,14 @@ body {
   background-color: #f0f0f0 !important;
   border-top: 1px solid #e0e0e0 !important;
   padding: 2.5rem 1.5rem !important;
-  margin-top: 3rem !important;
   color: #212121 !important;
   text-align: center !important;
   font-size: 0.9rem !important;
   width: 100% !important;
   clear: both !important;
-  position: absolute !important;
-  left: 0 !important;
-  right: 0 !important;
+  margin-top: auto !important;
   box-sizing: border-box !important;
+  position: relative !important;
   z-index: 20 !important;
   
   a {
@@ -1187,18 +1197,37 @@ body {
     }
   }
 
-  /* Force all main header links into the hamburger menu */
-  .greedy-nav {
-    .visible-links {
-      opacity: 0 !important;
-      pointer-events: none !important;
-      position: absolute !important;
-      
-      li {
-        width: 750px !important;
-        min-width: 750px !important;
-      }
-    }
+  /* All header links are moved into the hamburger menu by
+     assets/js/plugins/jquery.greedy-navigation.js below 925px. */
+}
+
+/* CV PDF viewer on small screens: keep the control bar on one row with legible
+   buttons, and drop the Fullscreen control (the Fullscreen API is unavailable
+   in iOS Safari, where the button silently does nothing). */
+@media (max-width: 924px) {
+  .pdf-control-bar {
+    flex-wrap: wrap !important;
+    gap: 0.5rem !important;
+    padding: 0.5rem !important;
+  }
+
+  .pdf-control-left,
+  .pdf-control-right {
+    gap: 0.5rem !important;
+  }
+
+  .pdf-btn {
+    white-space: nowrap !important;
+    padding: 0.4rem 0.7rem !important;
+  }
+
+  #btnFullscreen {
+    display: none !important;
+  }
+
+  #pdfIframe {
+    height: 70vh !important;
+    min-height: 420px !important;
   }
 }
 

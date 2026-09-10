@@ -40,15 +40,15 @@ layout: default
           {% endif %}
           
           {% if page.link %}
-            <p class="publication__doi"><strong>DOI:</strong> <a href="{{ page.link }}" target="_blank">{{ page.link }}</a></p>
+            <p class="publication__doi"><strong>DOI:</strong> <a href="{{ page.link }}" target="_blank" rel="noopener noreferrer">{{ page.link }}</a></p>
           {% endif %}
 
           <div class="publication__buttons">
             {% if page.paperurl %}
-              <a href="{{ page.paperurl }}" class="pub-btn" target="_blank">View PDF</a>
+              <a href="{{ page.paperurl }}" class="pub-btn" target="_blank" rel="noopener noreferrer">View PDF</a>
             {% endif %}
             {% if page.link %}
-              <a href="{{ page.link }}" class="pub-btn" target="_blank">Publisher Page</a>
+              <a href="{{ page.link }}" class="pub-btn" target="_blank" rel="noopener noreferrer">Publisher Page</a>
             {% endif %}
             {% if page.bibtex %}
               <button class="pub-btn" onclick="openCiteModal()">Cite</button>
